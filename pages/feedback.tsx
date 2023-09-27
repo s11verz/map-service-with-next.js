@@ -1,4 +1,4 @@
-import Header from '@/component/common/Header';
+import Header from '@/component/common/HeaderComponent';
 import { Fragment } from 'react';
 
 export default function Feedback() {

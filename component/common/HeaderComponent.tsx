@@ -4,14 +4,15 @@ import Image from 'next/image';
 import styles from '../../styles/header.module.scss';
 
 interface Props {
+  onClickLogo?: () => void;
   rightElement?: React.ReactElement[];
 }
 
-const Header = ({ rightElement }: Props) => {
+const HeaderComponent = ({ onClickLogo, rightElement }: Props) => {
   return (
     <header className={styles.header}>
       <div className={styles.flexItem}>
-        <Link href="/" className={styles.box}>
+        <Link href="/" className={styles.box} onClick={onClickLogo}>
           <Image
             src="https://lecture-1.vercel.app/inflearn.png"
             width={110}
@@ -25,4 +26,4 @@ const Header = ({ rightElement }: Props) => {
   );
 };
 
-export default Header;
+export default HeaderComponent;

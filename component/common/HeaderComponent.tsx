@@ -12,7 +12,7 @@ const HeaderComponent = ({ onClickLogo, rightElement }: Props) => {
   return (
     <header className={styles.header}>
       <div className={styles.flexItem}>
-        <Link href="/" className={styles.box} onClick={onClickLogo}>
+        <Link href="/" className={styles.box} onClick={onClickLogo }>
           <Image
             src="https://lecture-1.vercel.app/inflearn.png"
             width={110}

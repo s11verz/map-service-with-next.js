@@ -30,7 +30,7 @@ const useMap = () => {
   return {
     initializeMap,
     resetMapOptions,
-    getMapOptions,
+    getMapOptions, 
   };
 };
 export default useMap;
